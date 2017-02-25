@@ -1,6 +1,6 @@
 # WFPStarterKit
 
-This repository contains source code for an example [driver]{./WFPStarterKit} along with a [tutorial]{./Tutorial} that collectively show how to set-up some basic components of the Windows Filtering Platform (WFP).
+This repository contains source code for an example [driver]{WFPStarterKit} along with a [tutorial]{Tutorial} that collectively show how to set-up some basic components of the Windows Filtering Platform (WFP).
 The WFP is a kernel level Windows API that allows you develop drivers that provide networking functionality beyond the scope of any libraries provided by Microsoft.
 This powerful framework is essentially a tool kit for creaing networking rootkits on Windows, or for changing how Windows provides networking capabilities to all applications running in userspace.
 Even though this framework is very powerful, documentation for using (let alone getting started) with the WFP is currently nonexistent in my opinion.
