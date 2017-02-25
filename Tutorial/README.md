@@ -1,6 +1,4 @@
-<title> An Introduction The Windows Filtering Platform </title>
-
-<xmp theme="spacelab" style="display:none;">
+# An Introduction The Windows Filtering Platform
 
 Lately, I've been spending a significant portion of my time interacting with the low-level networking capabilities of Microsoft Windows. Starting with Windows Vista, Microsoft released a framework called the Windows Filtering Platform (WFP for short). It's the core foundation on which the Windows Firewall With Advanced (*haha*) Security is implemented. If you've ever had the unique pleasure of working with a Window's kernel-level API before, chances are you have experienced the overwhelming amount of dedication required to even get 'hello world' working. Navigating the absurd amount of inaccurate, misleading, outdated, incomplete (or whatever you want to call it...) information out there is **hard**.
 
