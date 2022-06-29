@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WFPStarterKit", "WFPStarterKit\WFPStarterKit.vcxproj", "{9868119E-A6EF-4E9A-9F59-ADDD73113260}"
 EndProject
@@ -12,6 +12,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WFPStarterKit Package", "WF
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		win10 Debug|Win32 = win10 Debug|Win32
+		win10 Debug|x64 = win10 Debug|x64
 		Win7 Debug|Win32 = Win7 Debug|Win32
 		Win7 Debug|x64 = Win7 Debug|x64
 		Win7 Release|Win32 = Win7 Release|Win32
@@ -26,6 +28,12 @@ Global
 		Win8.1 Release|x64 = Win8.1 Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|Win32.ActiveCfg = win10 Debug|Win32
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|Win32.Build.0 = win10 Debug|Win32
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|Win32.Deploy.0 = win10 Debug|Win32
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|x64.ActiveCfg = win10 Debug|x64
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|x64.Build.0 = win10 Debug|x64
+		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.win10 Debug|x64.Deploy.0 = win10 Debug|x64
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win7 Debug|Win32.ActiveCfg = Win7 Debug|Win32
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win7 Debug|Win32.Build.0 = Win7 Debug|Win32
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win7 Debug|Win32.Deploy.0 = Win7 Debug|Win32
@@ -62,6 +70,12 @@ Global
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win8.1 Release|x64.ActiveCfg = Win8.1 Release|x64
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win8.1 Release|x64.Build.0 = Win8.1 Release|x64
 		{9868119E-A6EF-4E9A-9F59-ADDD73113260}.Win8.1 Release|x64.Deploy.0 = Win8.1 Release|x64
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|Win32.ActiveCfg = win10 Debug|Win32
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|Win32.Build.0 = win10 Debug|Win32
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|Win32.Deploy.0 = win10 Debug|Win32
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|x64.ActiveCfg = win10 Debug|x64
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|x64.Build.0 = win10 Debug|x64
+		{30E75C04-01AC-42B4-BB00-98896F0AF824}.win10 Debug|x64.Deploy.0 = win10 Debug|x64
 		{30E75C04-01AC-42B4-BB00-98896F0AF824}.Win7 Debug|Win32.ActiveCfg = Win7 Debug|Win32
 		{30E75C04-01AC-42B4-BB00-98896F0AF824}.Win7 Debug|Win32.Build.0 = Win7 Debug|Win32
 		{30E75C04-01AC-42B4-BB00-98896F0AF824}.Win7 Debug|Win32.Deploy.0 = Win7 Debug|Win32
@@ -101,5 +115,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21FD13C1-362D-4935-9BB4-D779855557C7}
 	EndGlobalSection
 EndGlobal
