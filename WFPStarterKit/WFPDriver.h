@@ -19,10 +19,11 @@ Author: Jared Wright - 2015
 #include <fwpsk.h>				// Functions and enumerated types used to implement callouts in kernel mode
 #pragma warning(pop)			// Re-enable "Nameless struct/union" compiler warning
 
-#include <fwpmk.h>				// Functions used for managing IKE and AuthIP main mode (MM) policy and security associations
 #include <fwpvi.h>				// Mappings of OS specific function versions (i.e. fn's that end in 0 or 1)
 #include <guiddef.h>			// Used to define GUID's
 #include <initguid.h>			// Used to define GUID's
 #include "devguid.h"
+
+#include <fwpmk.h>				// Functions used for managing IKE and AuthIP main mode (MM) policy and security associations
 
 #endif // include guard

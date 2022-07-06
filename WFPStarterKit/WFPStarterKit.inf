@@ -4,29 +4,30 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=Sample ; TODO: edit Class
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Class=NetService
+ClassGuid= {4D36E974-E325-11CE-BFC1-08002BE10318}; use MS defined NetService
 Provider=%ManufacturerName%
-CatalogFile=WFPStarterKit.cat
+CatalogFile=wfpstarterkit.cat
 DriverVer= ; TODO: set DriverVer in stampinf property pages
+; PnpLockdown=1 ; set only for release, https://www.osr.com/blog/2021/10/08/should-i-set-pnplockdown1/
 
 [DestinationDirs]
 DefaultDestDir = 12
 
 ; ================= Class section =====================
 
-[ClassInstall32]
-Addreg=SampleClassReg
+;[ClassInstall32]
+;Addreg=SampleClassReg
 
-[SampleClassReg]
-HKR,,,0,%ClassName%
-HKR,,Icon,,-5
+;[SampleClassReg]
+;HKR,,,0,%ClassName%
+;HKR,,Icon,,-5
 
 [SourceDisksNames]
 1 = %DiskName%,,,""
 
-[SourceDisksFiles]
-WFPStarterKit.sys  = 1,,
+;[SourceDisksFiles]
+;WFPStarterKit.sys  = 1,,
 
 ;*****************************************
 ; Install Section
@@ -61,8 +62,8 @@ LoadOrderGroup = Extended Base
 ;--- WFPStarterKit_Device Coinstaller installation ------
 ;
 
-[DestinationDirs]
-WFPStarterKit_Device_CoInstaller_CopyFiles = 11
+;[DestinationDirs]
+;WFPStarterKit_Device_CoInstaller_CopyFiles = 11
 
 [WFPStarterKit_Device.NT.CoInstallers]
 AddReg=WFPStarterKit_Device_CoInstaller_AddReg
@@ -76,6 +77,7 @@ WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
 
 [SourceDisksFiles]
 WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+WFPStarterKit.sys  = 1,,
 
 [WFPStarterKit_Device.NT.Wdf]
 KmdfService =  WFPStarterKit, WFPStarterKit_wdfsect
@@ -84,7 +86,7 @@ KmdfLibraryVersion = $KMDFVERSION$
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
-ManufacturerName="" ; TODO: add ManufacturerName
+ManufacturerName="WFPStarterKit" ; TODO: add ManufacturerName
 ClassName="Samples" ; TODO: edit ClassName
 DiskName = "WFPStarterKit Installation Disk"
 WFPStarterKit.DeviceDesc = "WFPStarterKit Device"
